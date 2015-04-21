@@ -1,0 +1,25 @@
+From 695f7a8be6de66d7b98117926e394093d2e58f3a Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?S=C5=82awomir=20Wojtasiak?= <slawomir@wojtasiak.com>
+Date: Tue, 21 Apr 2015 22:30:26 +0200
+Subject: [PATCH] fix
+
+---
+ src/core/display.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/core/display.c b/src/core/display.c
+index d950e7e..ca654e6 100644
+--- a/src/core/display.c
++++ b/src/core/display.c
+@@ -662,7 +662,7 @@ meta_display_open (void)
+     meta_prop_set_utf8_string_hint (the_display,
+                                     the_display->leader_window,
+                                     the_display->atom__NET_WM_NAME,
+-                                    "Marco");
++                                    "Metacity (Marco)");
+     
+     meta_prop_set_utf8_string_hint (the_display,
+                                     the_display->leader_window,
+-- 
+2.0.5
+
