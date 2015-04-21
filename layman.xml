@@ -9,8 +9,8 @@
 			<name><![CDATA[Sławomir Wojtasiak]]></name>
 			<email>slawomir@wojtasiak.com</email>
 		</owner>
-		<source type="git">git://github.com/swojtasiak/jsrdbg-portage.git</source>
-		<source type="git">https://github.com/swojtasiak/jsrdbg-portage.git</source>
-		<feed>https://github.com/swojtasiak/jsrdbg-portage/commits/master.atom</feed>
+		<source type="git">git://github.com/swojtasiak/gentoo-overlay.git</source>
+		<source type="git">https://github.com/swojtasiak/gentoo-overlay.git</source>
+		<feed>https://github.com/swojtasiak/gento-overlay/commits/master.atom</feed>
 	</repo>
 </repositories>
