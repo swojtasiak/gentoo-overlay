@@ -1,3 +1,3 @@
 wget "https://raw.githubusercontent.com/swojtasiak/gentoo-overlay/master/layman.xml" -O /etc/layman/overlays/swojtasiak.xml
-layman -a -f swojtasiak.xml
+layman -a -f swojtasiak
 

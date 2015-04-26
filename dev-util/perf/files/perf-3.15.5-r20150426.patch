@@ -1,0 +1,26 @@
+From a3062ecf6475418b6e29e153ba5b601d37d339a8 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?S=C5=82awomir=20Wojtasiak?= <slawomir@wojtasiak.com>
+Date: Sun, 26 Apr 2015 13:32:08 +0200
+Subject: [PATCH] fix
+
+---
+ tools/perf/Makefile.perf | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/tools/perf/Makefile.perf b/tools/perf/Makefile.perf
+index 895edd3..33ac2b7 100644
+--- a/tools/perf/Makefile.perf
++++ b/tools/perf/Makefile.perf
+@@ -558,7 +558,8 @@ ifdef ASCIIDOC8
+   export ASCIIDOC8
+ endif
+ 
+-LIBS = -Wl,--whole-archive $(PERFLIBS) -Wl,--no-whole-archive -Wl,--start-group $(EXTLIBS) -Wl,--end-group
++LIBS = -Wl,--export-dynamic -Wl,--whole-archive $(PERFLIBS) -Wl,--no-whole-archive
++LIBS += -Wl,--start-group $(EXTLIBS) -Wl,--end-group
+ 
+ export INSTALL SHELL_PATH
+ 
+-- 
+2.0.5
+
